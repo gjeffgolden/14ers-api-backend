@@ -1,7 +1,7 @@
 # mySummits Backend (Flatiron School Mod3 Project)
 
 ## Functionality
-There are several Classes and Relationships used here. Users and Mountains are joined via two M:M relationships, one through the Summit class and one through the Comments class. This allows each individual user to log a Summit and leave a Comment about recent conditions on each Mountain. Users must login using a Bearer token, which customizes their frontend experience and only allows them to log summits and leave comments from their personal account.
+There are several Classes and Relationships at play. Users and Mountains are joined via two M:M relationships, one through the Summit class and one through the Comments class. This allows each individual user to log a Summit and leave a Comment about recent conditions on each Mountain. Users must login using a Bearer token, which customizes their frontend experience and only allows them to log summits and leave comments from their personal account. I also created much of the backend seed data for the 14ers from scratch, with each mountain having its Colorado rank, elevation, range, and an image.
 
 ## Lessons and Challenges
 1. **Multiple Migrations:** As the scope of the project changed, I had to make adjustments to the schema fairly deep into development. All told it required 13 seperate migrations, and I was terrified that each one would break something critical. I learned a ton about migrations and the proper and safe procedures for adjusting database tables.
@@ -33,3 +33,4 @@ There are several Classes and Relationships used here. Users and Mountains are j
 ## Future Features and Goals
 1. Allow a new user to register themselves.
 2. Since I had to create the fairly complex seed data for each 14er from scratch, I believe this is a good candidate to turn into a public API for other developers to use.
+3. Add latitude/longitude data to the 14er seeds and explore mapping functionality.
